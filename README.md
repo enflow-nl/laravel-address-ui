@@ -1,6 +1,6 @@
 # Laravel Address UI
 
-[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Software License](https://img.shields.io/badge/license-ISC-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Latest Version on NPM](https://img.shields.io/npm/v/enflow/laravel-address-ui.svg?style=flat-square)](https://npmjs.com/package/@enflow/laravel-address-ui)
 [![npm](https://img.shields.io/npm/dt/enflow/laravel-address-ui.svg?style=flat-square)](https://www.npmjs.com/package/@enflow/laravel-address-ui)
 
