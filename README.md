@@ -35,10 +35,19 @@ You must include the CSS provides by this package in your build process as well.
 
 Then, add the field to your template:
 
+#### .blade.php
 ```blade
 <div role="address">
-    <input type="text" role="address-label" value="{{ old('address_label', $user->address ? $user->address->label : null) }}" id="address_label" name="address_label" class="form-input">
+    <input type="text" role="address-label" value="{{ old('address_label', optional($user->address)->label) }}" id="address_label" name="address_label" class="form-input">
     <input type="hidden" role="address-value" value="{{ old('address', $user->address ? json_encode($user->address->value()) : null) }}" id="address" name="address">
+</div>
+```
+
+#### .twig
+```twig
+<div class="mt-1 rounded-md shadow-sm" role="address">
+    <input type="text" role="address-label" value="{{ old('address_label', user.address ? user.address.label : null) }}" id="address_label" name="address_label" class="form-input">
+    <input type="hidden" role="address-value" value="{{ old('address', user.address ? user.address.value()|json_encode : null) }}" id="address" name="address">
 </div>
 ```
 
