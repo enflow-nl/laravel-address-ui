@@ -78,7 +78,7 @@ value.setAttribute('role', 'address-value');
 wrapper.appendChild(value);
 
 var address = new Address('[role=address]', {
-  endpoint: 'https://banzaboo.client.test/address/suggest'
+  endpoint: 'https://laravel-address.enflow.test/address/suggest'
 });
 
 address.on('results', function(e) {
